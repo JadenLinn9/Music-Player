@@ -3,100 +3,111 @@
 <head>
 	<title>Music Player</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet"> 
 </head>
 
 <style>
 body {
-	overflow: hidden;
 	font-family: 'Noto Serif', serif;
+	width: 1920px;
+/*	background-color: #141414;*/
 }
 
-.area {
-	width: 100%;
-	height: 560px;
-/*	background-color: #21292F;*/
+#list {
+	width: 320px;
+	height: 956px;
+	background-color: #141414;
+	color: #FFFFFF;
+	float: left;
 }
 
-#logo{
-	color: #00F3FF;
-	font-size: 16px;
+#area {
+	width: 1600px;
+	height: 1076px;
+	float: right;
+}
+
+#logo {
+	color: #02C6C6;
 	text-align: center;
-	margin-top: 25px;
-}
-
-.container1 {
-	width: 25%;
-	height: 560px;
-	background-color: #21292F;
-	text-align: left;
+	padding-top: 37px;
+	margin-bottom: 30px;
 }
 
 ul {
-	color: #808080;
 	list-style: none;
-	text-align: left;
+
+}
+
+#browse, #radio {
+	font-size: 26px;
+	margin-bottom: 40px;
+}
+
+#playlists {
+	font-size: 26px;
 }
 
 li {
-	margin-left: 60px;
-
+    font-size: 26px;
+	color: #ACACAC;
 }
 
-h3	{
-	color: #00F3FF;
-	font-size: 16px;
-	margin-top: 50px;
-	margin-left: 100px;
+#photo {
+	height: 480px;
+	background-image: url("Pomp Re.png");
+	opacity: 0.8;
+	position: relative;
+	width: 1200px;
 }
 
-.container2 {
-	width: 50%;
-	background-color: #808080;
+h1 {
+	font-size: 120px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	position: absolute;
+	bottom: 0;
 }
 
-#footer {
-	width: 100%;
-	height: 65px;
-	background-color: #808080;
+button {
+	position: absolute;
+	bottom: 0;
 }
-	
+
 </style>
 
 <body>
-	<div class="area">
- <div class="row">
-    <div class="col-3 container1">
-      <h5 id="logo">MusicPlayer</h5>
-      <h3>YOUR LIBRARY</h3>
-      <ul>
-      	<li>Playlists</li>
-      	<li>Artists</li>
-      	<li>Album</li>
-      	<li>Songs</li>
-      </ul>
-      <h3>DISCOVER</h3>
-      <ul>
-      	<li>Store</li>
-      	<li>Radio</li>
-      	<li>Like</li>
-      	<li>Browse</li>
-      </ul>
-      <img src="week 3/LOVE YA!.png" style="margin-left: 100px;margin-top: 15px;">
-    </div>
-    <div class="col-6 container2">
-  
-    </div>
-    <div class="col-3 container1">
 
-    </div>
-  </div>
+	<div id="list">
+		<div class="container">
+		<h2 id="logo">MU MUSIC</h2>
+		<h5 id="browse"><img src="icon_browse.svg" style="padding-right: 15px;">BROWSE</h5>
+		<h5 id="radio"><img src="icon_radio.svg" style="padding-right: 15px;">RADIO</h5>
+		<h5 id="playlists"><img src="icon_playists.svg" style="padding-right: 15px;">PLAYLISTS</h5>
+		<ul>
+			<li>Vocal Cover</li>
+			<li>Funk</li>
+			<li>Jazz</li>
+			<li>Korea POP</li>
+			<li>Mandarin POP</li>
+			<li>Piano Moods</li>
+			<li>Relax</li>
+		</ul>
+</div>
+	</div>
 
-		
+
+	<div id="area">
+		<div id="photo">
+			<input type="text" name="">
+				<h1>Pomplamose</h1>
+				<img src="btn_play_normal.svg">
+
+		</div>
+		<div>
+			
+		</div>
 	</div>
-	<div id="footer">
-		
-	</div>
+
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
